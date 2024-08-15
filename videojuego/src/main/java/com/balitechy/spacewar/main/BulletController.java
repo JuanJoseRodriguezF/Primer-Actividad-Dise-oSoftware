@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.util.LinkedList;
 
 public class BulletController {
-	private LinkedList<Bullet> bl = new LinkedList<Bullet>();
+	private LinkedList<IBullet> bl = new LinkedList<>();
 	
 	public void tick(){
 		for(int i=0; i < bl.size(); i++){
@@ -22,11 +22,11 @@ public class BulletController {
 		}
 	}
 	
-	public void addBullet(Bullet bullet){
+	public void addBullet(IBullet bullet){
 		bl.add(bullet);
 	}
 	
-	public void removeBullet(Bullet bullet){
+	public void removeBullet(IBullet bullet){
 		bl.remove(bullet);
 	}
 }
