@@ -238,7 +238,7 @@ public class Game extends Canvas implements Runnable {
     }
 	
 	public static void main(String args[]){		
-		GameFactory factory = new ColorfulVectorialGameFactory();
+		GameFactory factory = new SpriteGameFactory();
 		Game game = new Game(factory);
 		game.setPreferredSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
 		game.setMaximumSize(new Dimension(WIDTH * SCALE, HEIGHT * SCALE));
